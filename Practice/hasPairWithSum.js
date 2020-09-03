@@ -1,6 +1,8 @@
+//0(n) linear search 
+//go through each element check for value or add complement to the set
+
 function hasPairWithSum(arr, sum){
   let set = new Set() //empty complements set
-
   for (let num of arr){
     if(set.has(num) ){
       return true
