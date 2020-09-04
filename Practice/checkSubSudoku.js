@@ -84,6 +84,9 @@ function isColValid(matrix, j, len) {
 function isRowValid(row, len) {
     let array = new Array(len).fill(0)
     let set = new Set()
+    console.log(array)
+
+
     for (let i = 0; i < row.length; i++) {
       let num = row[i]
       if (set.has(num)) {

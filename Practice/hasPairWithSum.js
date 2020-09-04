@@ -1,5 +1,7 @@
-//0(n) linear search 
+//0(n) linear search for unsorted array
 //go through each element check for value or add complement to the set
+//find pairs in an array of integer which number in the pair are next
+// to each other and whose sum is equal to a given number
 
 function hasPairWithSum(arr, sum){
   let set = new Set() //empty complements set
@@ -19,3 +21,4 @@ let arr3 = [] //false
 console.log(hasPairWithSum(arr1, 8))
 console.log(hasPairWithSum(arr2, 8))
 console.log(hasPairWithSum(arr3, 8))
+
