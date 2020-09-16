@@ -13,3 +13,5 @@ const reverseOnce = (s) => {
   subStr = subStr.split('').reverse().join('');
   return s.replace(regexp, subStr)
 }
+
+console.log(reverseInParentheses("(bar)")) // output: rab
