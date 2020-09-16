@@ -15,3 +15,4 @@ const reverseOnce = (s) => {
 }
 
 console.log(reverseInParentheses("(bar)")) // output: rab
+console.log(reverseInParentheses("foo(bar)baz")) // output: foorabbaz
