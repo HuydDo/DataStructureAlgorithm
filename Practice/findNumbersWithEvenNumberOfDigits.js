@@ -5,7 +5,7 @@
 var findNumbers = function(nums) {
   let result = 0;
   for(let num of nums){
-      // console.log(num.toString().length%2==0)
+      console.log(num.toString().length%2)
       if (num.toString().length%2==0)
         result++
   }
