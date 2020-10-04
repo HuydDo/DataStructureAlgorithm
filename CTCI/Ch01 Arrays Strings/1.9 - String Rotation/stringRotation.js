@@ -8,3 +8,4 @@ var stringRotation = function(string1, string2){
 
 // Test
 console.log(stringRotation('waterbottle', 'erbottlewat'), true);
+console.log(stringRotation('waterbottle', 'erbotlewatt'), false);
