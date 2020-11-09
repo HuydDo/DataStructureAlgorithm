@@ -18,7 +18,7 @@ var validMountainArray = function(arr) {
    return true
 };
 
-// let arr = [2,1] //Output false
+// let arr = [2,1,0] //Output false
 // let arr = [3,5,5] //Output: false
 let arr = [0,3,2,1] //Output: true
 
