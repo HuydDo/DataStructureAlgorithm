@@ -4,11 +4,16 @@
  */
 const moveZeroes = (nums) => {
   let zeroCnt = 0;
-  for (let i = nums.length - 1; 0 <= i; i--)
-    if (0 === nums[i]) {
+  for (let i = nums.length - 1; i>=0; i--)
+    if ( nums[i] === 0) {
+      //increment zeroCount when found 0
+      //move 0 until the end by swapping the element
       zeroCnt++;
-      for (let j = i; j < nums.length - zeroCnt; j++)
+      for (let j = i; j < nums.length - zeroCnt; j++){
         [nums[j], nums[j + 1]] = [nums[j + 1], nums[j]];
+        // console.log(j)
+        // console.log(nums)
+      }
     }
    return nums
 };
