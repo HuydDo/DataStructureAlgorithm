@@ -1,6 +1,9 @@
 /**
  * @param {number[]} A
  * @return {number[]}
+ * Time Complexity: O(N), where NN is the length of A.
+
+Space Complexity: O(N), the space used by the answer
  */
 var sortArrayByParity = function(A) {
     let ans = []
