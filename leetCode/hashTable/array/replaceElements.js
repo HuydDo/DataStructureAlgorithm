@@ -7,10 +7,17 @@
 // };
 
 const replaceElements = arr => {
-  for (let i = arr.length - 2, tmp = arr[arr.length - 1]; 0 <= i; i--)
+  for (let i = arr.length - 2, tmp = arr[arr.length - 1]; 0 <= i; i--){
+    console.log(`before arr[i]: ${arr[i]} temp: ${tmp}`)
     if (tmp < arr[i]) [arr[i], tmp] = [tmp, arr[i]];
     else arr[i] = tmp;
+    console.log(`after arr[i]: ${arr[i]} temp: ${tmp}`)
+    console.log(arr)
+  }
   arr[arr.length - 1] = -1;
+ 
+  
+
   return arr;
 };
 
