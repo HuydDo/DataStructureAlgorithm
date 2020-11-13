@@ -7,7 +7,7 @@ const moveZeroes = (nums) => {
   for (let i = nums.length - 1; i>=0; i--)
     if ( nums[i] === 0) {
       //increment zeroCount when found 0
-      //move 0 until the end by swapping the element
+      //move 0 to the end by swapping the elements
       zeroCnt++;
       for (let j = i; j < nums.length - zeroCnt; j++){
         [nums[j], nums[j + 1]] = [nums[j + 1], nums[j]];
