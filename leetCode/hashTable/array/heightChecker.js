@@ -3,5 +3,21 @@
  * @return {number}
  */
 var heightChecker = function(heights) {
-    
+    return heights
+    .slice()
+    .sort((a,b) => a-b)
+    .reduce((acc, curr, idx) => 
+      (curr !== heights[idx] ? acc + 1: acc), 0)
+
 };
+
+
+let heights = [1,1,4,2,1,3]
+/*
+Current array : [1,1,4,2,1,3]
+Target array  : [1,1,1,2,3,4]
+On index 2 (0-based) we have 4 vs 1 so we have to move this student.
+On index 4 (0-based) we have 1 vs 3 so we have to move this student.
+On index 5 (0-based) we have 3 vs 4 so we have to move this student.
+*/
+console.log(heightChecker(heights))
