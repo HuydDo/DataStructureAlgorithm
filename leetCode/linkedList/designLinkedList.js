@@ -48,8 +48,21 @@ MyLinkedList.prototype.addAtHead = function(val) {
   }
 };
 
+MyLinkedList.prototype.printList = function () {
+  var current = this
+  var output = ''
+  while (current) {
+    output += current.val + " -> "
+    current = current.next
+  }
+  console.log(output)
+};
 
+var obj = new MyLinkedList()
 
+obj.addAtHead(1)
+obj.printList()
+console.log(obj.get(0))
 
 /**
 * Your MyLinkedList object will be instantiated and called as such:
