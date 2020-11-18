@@ -48,6 +48,17 @@ MyLinkedList.prototype.addAtHead = function(val) {
   }
 };
 
+/**
+ * Append a node of value val to the last element of the linked list.
+ * @param {number} val
+ * @return {void}
+ */
+MyLinkedList.prototype.addAtTail = function(val) {
+  var t = this.createNode(val)
+  this.tail.next = t
+  this.tail = t
+};
+
 MyLinkedList.prototype.printList = function () {
   var current = this
   var output = ''
