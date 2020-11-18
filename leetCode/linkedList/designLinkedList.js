@@ -29,11 +29,19 @@ MyLinkedList.prototype.get = function(index) {
   return cur.val
 }
 
-MyLinkedList.prototype.createNode = function(val){
-  var temp = new ListNode(val)
-  return temp
-}
-
+/**
+ * Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
+ * @param {number} val
+ * @return {void}
+ */
+MyLinkedList.prototype.addAtHead = function(val) {
+  var temp = this.createNode(val)
+  temp.next = this.dummy.next
+  this.dummy.next = temp
+  if (this.tail == this.dummy) {
+      this.tail = temp
+  }
+};
 
 
 
