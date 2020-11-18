@@ -2,7 +2,8 @@
  * Initialize your data structure here.
  */
 var MyLinkedList = function() {
-    
+ this.val = null
+ this.next = null    
 };
 
 /**
