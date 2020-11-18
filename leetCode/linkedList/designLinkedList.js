@@ -12,7 +12,13 @@ var MyLinkedList = function() {
  * @return {number}
  */
 MyLinkedList.prototype.get = function(index) {
-    
+   var current = this
+   var output = ''
+   while (current) {
+     output += current.val + " -> "
+     current = current.next
+   }
+   console.log(output)
 };
 
 /**
