@@ -60,7 +60,8 @@ MyLinkedList.prototype.addAtTail = function(val) {
 };
 
 /**
- * Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
+ * Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. 
+ * If index is greater than the length, the node will not be inserted.
  * @param {number} index
  * @param {number} val
  * @return {void}
@@ -86,6 +87,37 @@ MyLinkedList.prototype.addAtIndex = function(index, val) {
   } else {
       node.next = cur.next
       cur.next = node
+  }
+};
+
+MyLinkedList.prototype.getAt = function(index) {
+  if (index<0) {
+      return null
+  }
+  var cur = this.dummy
+  while (cur.next && index>0) {
+      cur = cur.next
+      index--
+  }
+  if (!cur.next) {
+      return null
+  }
+  return cur
+};
+
+/**
+* Delete the index-th node in the linked list, if the index is valid.
+* @param {number} index
+* @return {void}
+*/
+MyLinkedList.prototype.deleteAtIndex = function(index) {
+  var prev = this.getAt(index)
+  if (!prev) {
+      return
+  }
+  prev.next = prev.next.next
+  if (!prev.next) {
+      this.tail = prev
   }
 };
 
