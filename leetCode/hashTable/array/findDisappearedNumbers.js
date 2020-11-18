@@ -12,6 +12,7 @@ var findDisappearedNumbers = function(nums) {
           }
           counter ++
       }
+      
       return answer
   };
 
