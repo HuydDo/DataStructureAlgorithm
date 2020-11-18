@@ -9,6 +9,17 @@ var ListNode = function(val) {
   this.next = null
 };
 
+
+MyLinkedList.prototype.printList = function () {
+  var current = this
+  var output = ''
+  while (current) {
+    output += current.val + " -> "
+    current = current.next
+  }
+  console.log(output)
+};
+
 /**
  * Get the value of the index-th node in the linked list. If the index is invalid, return -1.
  * @param {number} index
@@ -121,21 +132,8 @@ MyLinkedList.prototype.deleteAtIndex = function(index) {
   }
 };
 
-MyLinkedList.prototype.printList = function () {
-  var current = this
-  var output = ''
-  while (current) {
-    output += current.val + " -> "
-    current = current.next
-  }
-  console.log(output)
-};
 
-var obj = new MyLinkedList()
 
-obj.addAtHead(1)
-obj.printList()
-console.log(obj.get(0))
 
 /**
 * Your MyLinkedList object will be instantiated and called as such:
@@ -152,12 +150,12 @@ console.log(obj.get(0))
 
 
 // Explanation
-// MyLinkedList myLinkedList = new MyLinkedList();
-// myLinkedList.addAtHead(1);
-// myLinkedList.addAtTail(3);
-// myLinkedList.addAtIndex(1, 2);    // linked list becomes 1->2->3
-// myLinkedList.get(1);              // return 2
-// myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
-// myLinkedList.get(1);              // return 3
+var myLinkedList = new MyLinkedList();
+myLinkedList.addAtHead(1);
+myLinkedList.addAtTail(3);
+myLinkedList.addAtIndex(1, 2);    // linked list becomes 1->2->3
+myLinkedList.get(1);              // return 2
+myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
+myLinkedList.get(1);              // return 3
 
-var obj = new MyLinkedList()
+myLinkedList.printList()
