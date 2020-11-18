@@ -29,6 +29,11 @@ MyLinkedList.prototype.get = function(index) {
   return cur.val
 }
 
+MyLinkedList.prototype.createNode = function(val){
+  var temp = new ListNode(val)
+  return temp
+}
+
 
 
 
