@@ -35,7 +35,7 @@ var removeDups = function(head){
       node = node.next;
     }
   }
-  return head;;
+  return head;
 }
 /* TEST */
 var a = new LinkedList('a');
@@ -51,3 +51,31 @@ d.next = e;
 
 removeDups(a);
 printLinkedList(a);
+
+var f = new LinkedList('f');
+var g = new LinkedList('g');
+var h = new LinkedList('g');
+var i = new LinkedList('g');
+var j = new LinkedList('g');
+
+f.next = g;
+g.next = h;
+h.next = i;
+i.next = j;
+
+removeDups(f);
+printLinkedList(f);
+
+var k = new LinkedList('g');
+var l = new LinkedList('g');
+var m = new LinkedList('g');
+var n = new LinkedList('b');
+var o = new LinkedList('g');
+
+k.next = l;
+l.next = m;
+m.next = n;
+n.next = o;
+
+removeDups(k);
+printLinkedList(k);
