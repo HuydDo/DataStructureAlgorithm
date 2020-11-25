@@ -33,10 +33,10 @@ f.next = g;
 
 findKthToLast(3, a);
 
-// findKthToLast(10, a);
+findKthToLast(10, a);
 
-// findKthToLast(-1, a);
+findKthToLast(-1, a);
 
-// findKthToLast(0, a);
+findKthToLast(0, a);
 
-// findKthToLast(1, a);
+findKthToLast(1, a);
