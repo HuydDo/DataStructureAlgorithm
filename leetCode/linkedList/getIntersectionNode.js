@@ -12,5 +12,15 @@
  * @return {ListNode}
  */
 var getIntersectionNode = function(headA, headB) {
-    
+  if (!headA || !headB) {
+    return undefined
+  }
+
+  var a = headA
+  var b = headB
+  while (a!==b) {
+      a = !a? headB : a.next
+      b = !b? headA : b.next 
+  }
+  return a
 };
