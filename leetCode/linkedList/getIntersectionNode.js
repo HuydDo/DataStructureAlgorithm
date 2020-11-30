@@ -11,16 +11,26 @@
  * @param {ListNode} headB
  * @return {ListNode}
  */
-var getIntersectionNode = function(headA, headB) {
-  if (!headA || !headB) {
-    return undefined
-  }
+// var getIntersectionNode = function(headA, headB) {
+//   if (!headA || !headB) {
+//     return undefined
+//   }
 
-  var a = headA
-  var b = headB
-  while (a!==b) {
-      a = !a? headB : a.next
-      b = !b? headA : b.next 
-  }
-  return a
+//   var a = headA
+//   var b = headB
+//   while (a!==b) {
+//       a = !a? headB : a.next
+//       b = !b? headA : b.next 
+//   }
+//   return a
+// };
+
+var getIntersectionNode = function(headA, headB) {
+  pa = headA, pb = headB;
+      while (pa != pb) {
+          pa = (pa != null) ? pa.next : headB;
+          pb = (pb != null) ? pb.next : headA;
+      }
+      return pa;
+  
 };
