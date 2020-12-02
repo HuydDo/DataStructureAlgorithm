@@ -12,4 +12,10 @@ var deleleMidNode = function(midNode){
     } 
     node = node.next;
   }
+
+  // a -> b -> c -> d -> e -> f, input c
+// a -> b -> *d -> d -> e -> f
+// a -> b -> d -> *e -> e -> f
+// a -> b -> d -> e -> *f -> f
+// a -> b -> d -> e -> f -> *null
 }
