@@ -22,11 +22,11 @@ function fibonacci2(n) {
   }   
   let iterationsCounter = n - 1;   
   while (iterationsCounter) { 
-    console.log('counter ',iterationsCounter)   
+    // console.log('counter ',iterationsCounter)   
     currentValue += previousValue;   
-    console.log('currVal ', currentValue) 
+    // console.log('currVal ', currentValue) 
     previousValue = currentValue - previousValue;
-    console.log('preVal ', previousValue)
+    // console.log('preVal ', previousValue)
     fibSequence.push(currentValue);     
     iterationsCounter -= 1;  
   }   
