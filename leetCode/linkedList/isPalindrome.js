@@ -21,4 +21,17 @@ var isPalindrome = function(head) {
       fast = fast.next.next
     }
 
+    var sHead = slow.next
+    slow.next = null;
+
+    //reverse sHead list
+    var p1 = sHead
+    var p2 = p1.next
+    while (p1 && p2){
+      var temp = p2.next
+      p2.next = p1
+      p1 = p2
+      p2 = temp
+    }
+
 };
