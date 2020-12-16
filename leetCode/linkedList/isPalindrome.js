@@ -39,7 +39,11 @@ var isPalindrome = function(head) {
     var p = p2? p2:p1
     var q = head
     while(p){
-
+       if (p.val != q.val){
+         return false
+       }
+       p = p.next
+       q = q.next
     }
     return true
 };
