@@ -13,4 +13,12 @@ var isPalindrome = function(head) {
     if (!head || !head.next){
       return true
     }
+
+    var slow = head
+    var fast = head
+    while (fast.next && fast.next.next){
+      slow = slow.next
+      fast = fast.next.next
+    }
+
 };
