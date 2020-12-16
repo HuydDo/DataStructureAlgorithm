@@ -10,5 +10,7 @@
  * @return {boolean}
  */
 var isPalindrome = function(head) {
-    
+    if (!head || !head.next){
+      return true
+    }
 };
