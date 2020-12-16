@@ -33,5 +33,13 @@ var isPalindrome = function(head) {
       p1 = p2
       p2 = temp
     }
+    sHead.next = null
 
+    //compare head and sHead
+    var p = p2? p2:p1
+    var q = head
+    while(p){
+
+    }
+    return true
 };
