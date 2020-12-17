@@ -14,11 +14,13 @@ var firstUniqChar = function(s) {
   }
 
   for(let i = 0; i < s.length; i++){
-      if (hash[s[i]] === 0) return i;
+      if (hash[s[i]] === 0)  return i;
+      // if (hash[s[i]] === 0) return s[i];
+      // return Object.keys(hash)
   }
 
   return -1
 };
 
-// console.log(firstUniqChar("leetcode")); //0
-console.log(firstUniqChar("loveleetcode")); //2
+console.log(firstUniqChar("leetcode")); //0
+// console.log(firstUniqChar("loveleetcode")); //2
