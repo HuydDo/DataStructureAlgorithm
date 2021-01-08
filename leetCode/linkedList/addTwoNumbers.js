@@ -10,6 +10,7 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
+/* Method #1 */
 var addTwoNumbers = function(l1, l2) {
   cur1 = l1;
   cur2 = l2;
@@ -38,4 +39,16 @@ var addTwoNumbers = function(l1, l2) {
       cur = cur.next
   }
   return dummy.next
+};
+
+/*Method #2 */
+var addTwoNumbers = function(l1, l2) {
+  let cur1 = l1
+  let cur2 = l2
+  let dummy = new ListNode(0)
+  let curr = dummy
+  let carry = 0
+
+
+
 };
