@@ -7,7 +7,7 @@
 *  Space Complexity: O(1)O(1). In Java, our character array is O(N).
  */
 var judgeCircle = function(moves) {
-  let count = 0, x = 0, y = 0
+  let x = 0, y = 0
   for (let i=0; i < moves.length; i++){
     let move = moves.charAt(i)
     if (move == 'U') y++
