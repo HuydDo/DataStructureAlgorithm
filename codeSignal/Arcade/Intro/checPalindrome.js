@@ -4,3 +4,5 @@ function checkPalindrome(inputString) {
       str += inputString.charAt(i)
   return str === inputString
 }
+
+console.log(checkPalindrome("gg"))
