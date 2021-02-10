@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-let s = 'aaa'
+let s = 'abc'
 
 var countSubstrings = function(s) {
     
