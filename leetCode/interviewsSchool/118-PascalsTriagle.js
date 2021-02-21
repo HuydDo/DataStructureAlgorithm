@@ -7,4 +7,12 @@ var generate = function(numRows) {
     return []
   }
   var result = []
+
+  for (var row=0; row < numRows; row++) {
+    var arr = []
+    arr[0] = arr[row] = 1
+
+    result[row] = arr
+  }
+  return result
 };
