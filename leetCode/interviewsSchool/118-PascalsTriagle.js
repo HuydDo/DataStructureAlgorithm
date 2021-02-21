@@ -5,5 +5,6 @@
 var generate = function(numRows) {
   if (numRows<1) {
     return []
-}
+  }
+  var result = []
 };
