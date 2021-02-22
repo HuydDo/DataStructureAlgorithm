@@ -9,6 +9,13 @@ var strStr = function(h, n) {
   }
   if(!h.includes(n)){
     return -1
-}
+  }
+
+  for(var i = 0; i < h.length; i++){
+    if(h.slice(i, n.length + i) === n){
+        return i
+    }
+  }
+
 
 };
