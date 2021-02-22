@@ -12,10 +12,11 @@ var strStr = function(h, n) {
   }
 
   for(var i = 0; i < h.length; i++){
+    // console.log(h.slice(i, n.length + i))
     if(h.slice(i, n.length + i) === n){
         return i
     }
   }
-
-
 };
+
+console.log(strStr("hello","ll"))  //2
