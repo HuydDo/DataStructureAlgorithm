@@ -3,6 +3,8 @@
  * @param {string} needle
  * @return {number}
  */
-var strStr = function(haystack, needle) {
-    
+var strStr = function(h, n) {
+  if(n === ''){
+      return 0
+  }
 };
