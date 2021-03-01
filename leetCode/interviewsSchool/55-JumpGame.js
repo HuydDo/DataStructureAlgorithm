@@ -2,6 +2,6 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var containsDuplicate = function(nums) {
+var canJump = function(nums) {
     
 };
