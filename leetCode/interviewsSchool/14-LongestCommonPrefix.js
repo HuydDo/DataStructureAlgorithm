@@ -11,6 +11,7 @@ var longestCommonPrefix = function(strs) {
   }
   for (var i=0; i<strs[0].length; i++) {
       var c = strs[0].charAt(i);
+      console.log(c)
       for (var j=1; j<strs.length; j++) {
           if (i<strs[j].length && c==strs[j].charAt(i)) {
               continue;
@@ -21,3 +22,6 @@ var longestCommonPrefix = function(strs) {
   // strs[0] could be the shortest
   return strs[0]
 };
+
+var strs = ["flower","flow","flight"]
+console.log(longestCommonPrefix(strs))
