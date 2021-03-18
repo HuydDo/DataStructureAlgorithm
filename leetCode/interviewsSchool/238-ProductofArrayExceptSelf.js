@@ -10,7 +10,8 @@
       p*=nums[i-1]
       res.push(p)
   }
-
+  console.log('res: ' + res)
+  console.log('nums: ' + nums)
   p=1
   for (var i=nums.length-2; i>=0; i--) {
       p*=nums[i+1]
@@ -18,3 +19,6 @@
   }
   return res
 };
+
+let nums = [1,2,3,4]
+console.log(productExceptSelf(nums))
