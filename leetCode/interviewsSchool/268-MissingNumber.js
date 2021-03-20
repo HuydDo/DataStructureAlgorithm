@@ -12,3 +12,6 @@
   }
   return res
 };
+
+let nums = [3,0,1]
+console.log(missingNumber(nums))
