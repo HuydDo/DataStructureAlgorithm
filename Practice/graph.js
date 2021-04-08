@@ -16,13 +16,25 @@ class Graph {
     this.adjacencyList[vertex2] = this.adjacencyList[vertex2].filter(neighbor => neighbor !== vertex1)
   }
   removeVertex(vertex) {
-    this.adjacencyList[vertex].forEach(neighbor => this.removeEdge(vertex, neighbor))
+    // console.log(vertex)
+    this.adjacencyList[vertex].forEach(
+      neighbor => 
+      {
+        // console.log(neighbor)
+        this.removeEdge(vertex, neighbor)
+      } )
     delete this.adjacencyList[vertex]
   }
 
 }
 let g = new Graph()
-g.addVertex('jfk')
+g.addVertex('jfk') /*Graph { adjacencyList: { jfk: [] } } */
+g.addVertex('mco') /* Graph { adjacencyList: { jfk: [], mco: [] } } */
+
+g.addEdge('jfk', 'mco')  /* Graph { adjacencyList: { jfk: [ 'mco' ], mco: [ 'jfk' ] } } */
+ 
+g.removeVertex('mco') /*Graph { adjacencyList: { jfk: [] } } */
+/*
 g.addVertex('lga')
 g.addVertex('nwk')
 g.addVertex('sjc')
@@ -38,5 +50,6 @@ g.addEdge('nwk', 'sea')
 g.addEdge('atl', 'mco')
 g.addEdge('sjc', 'sea')
 
-g.removeVertex('mco')
+g.removeVertex('mco') 
+*/
 console.log(g)
