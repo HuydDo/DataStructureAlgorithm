@@ -1,5 +1,7 @@
-class Solution {
-  public boolean isToeplitzMatrix(int[][] matrix) {
-      
-  }
-}
+/**
+ * @param {number[][]} matrix
+ * @return {boolean}
+ */
+ var isToeplitzMatrix = function(matrix) {
+    
+};
