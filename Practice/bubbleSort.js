@@ -18,4 +18,10 @@ let numbers = [3,5,2]
 bubbleSort(numbers)
 console.log(numbers)
 
-
+function usingSort(arr){
+  arr.sort((a,b) => a-b)
+  return arr
+}
+let arr = [34,2,5]
+usingSort(arr)
+console.log(arr)
