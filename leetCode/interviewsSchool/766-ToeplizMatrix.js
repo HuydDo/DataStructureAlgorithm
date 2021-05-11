@@ -3,19 +3,16 @@
  * @return {boolean}
  */
   var isToeplitzMatrix = function(matrix) {
-    
     for (let r = 0; r < matrix.length; ++r)
     {  
        for (let c = 0; c < matrix[0].length; ++c)
        {
          console.log('r: ' + r + ' c: ' + c);
          if (r > 0 && c > 0 && matrix[r-1][c-1] != matrix[r][c]){
-          temp = matrix[r-1][c-1];
           console.log(matrix[r-1][c-1])
           console.log(matrix[r][c])
           return false;
          }
-               
        }
     }
     return true;
