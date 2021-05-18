@@ -21,25 +21,29 @@
  * A[4] = 3
  * A[5] = 7
  */
-
-function solution(A) {
-  // write your code in JavaScript (Node.js 8.9.4)
-  let len = A.length;
-  let first, second, cost = Number.MAX_SAFE_INTEGER;
-
-  if(len <=2) return 0;
-
-  for(let i=1; i<len-1; i++){
-      first = A[i];
-      for(let j= i+2; j<len-1; j++){
-          second = A[j];
-          if(first + second < cost){
-              cost = first + second;
-          }
-      }
-  }
-  return cost;
+public class task4 {
+  public static void main(String[] args) {
+    int[] A = new int[]{5, 2, 4, 6, 3, 7};
+    System.out.println(solution(A));
 }
 
-let Arr=[5,2,4,6,3,7];
-console.log(solution(Arr));
+public static int solution(int[] A) {
+    if (A.length <= 2) return 0;
+
+    int firstMin;
+    int secondMin;
+    int cost = Integer.MAX_VALUE;
+
+    for (int i = 1; i < A.length - 1; i++) {
+        firstMin = A[i];
+        for (int j = i + 2; j < A.length - 1; j++) {
+            secondMin = A[j];
+            if (secondMin + firstMin < cost) {
+                cost = secondMin + firstMin;
+            }
+        }
+
+    }
+    return cost;
+}
+}

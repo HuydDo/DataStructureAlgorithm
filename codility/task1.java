@@ -24,6 +24,7 @@
 
 */
 
+
 public class MaxCount {
   public static void main(String[] args){
     int [] arr = new int[] {1,0,1,0};
