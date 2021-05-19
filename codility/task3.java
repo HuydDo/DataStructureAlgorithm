@@ -21,7 +21,7 @@
  * A[4] = 3
  * A[5] = 7
  */
-public class task4 {
+public class task3 {
   public static void main(String[] args) {
     int[] A = new int[]{5, 2, 4, 6, 3, 7};
     System.out.println(solution(A));
