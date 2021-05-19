@@ -37,7 +37,7 @@ var  removeDuplicates = function(nums){
   // return l+1;
   
   for(let i = 1; i<nums.length; i++){
-    console.log(i);
+    console.log('i: ' + i);
     if(nums[l] !== nums[r]){
       l +=1;
       console.log('l: ' + l);
