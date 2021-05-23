@@ -25,25 +25,25 @@ public class task3 {
   public static void main(String[] args) {
     int[] A = new int[]{5, 2, 4, 6, 3, 7};
     System.out.println(solution(A));
-}
+  }
 
-public static int solution(int[] A) {
-    if (A.length <= 2) return 0;
+  public static int solution(int[] A) {
+      if (A.length <= 2) return 0;
 
-    int firstMin;
-    int secondMin;
-    int cost = Integer.MAX_VALUE;
+      int firstMin;
+      int secondMin;
+      int cost = Integer.MAX_VALUE;
 
-    for (int i = 1; i < A.length - 1; i++) {
-        firstMin = A[i];
-        for (int j = i + 2; j < A.length - 1; j++) {
-            secondMin = A[j];
-            if (secondMin + firstMin < cost) {
-                cost = secondMin + firstMin;
-            }
-        }
+      for (int i = 1; i < A.length - 1; i++) {
+          firstMin = A[i];
+          for (int j = i + 2; j < A.length - 1; j++) {
+              secondMin = A[j];
+              if (secondMin + firstMin < cost) {
+                  cost = secondMin + firstMin;
+              }
+          }
 
-    }
-    return cost;
-}
+      }
+      return cost;
+  }
 }

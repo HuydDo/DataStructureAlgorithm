@@ -25,8 +25,13 @@
 */
 
 
-public class test1{
-  static int solution(int[] A){
+public class task1{
+  public static void main(String[] args) {
+    int [] arr = new int[] {1,0,1,0};
+    System.out.println(solution(arr));
+  }
+
+  public static int solution(int[] A){
       int count = 0;
       int max = 0;
 
@@ -40,9 +45,4 @@ public class test1{
       }
       return max; 
     }
-
-  public static void main(String[] args) {
-    int [] arr = new int[] {1,0,1,0};
-    System.out.println(solution(arr));
-  }
 }
