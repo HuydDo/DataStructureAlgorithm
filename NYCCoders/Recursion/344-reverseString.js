@@ -11,6 +11,7 @@ var reverseString = function(s) {
   if (s === null)
       return;
   let l = 0, r = s.length - 1;
+  
   while(l < r){
       let temp = s[l];
       s[l] = s[r];
@@ -18,6 +19,7 @@ var reverseString = function(s) {
       l++;
       r--;
   }
+ }
 }
 
-let ans = reverseString('hello')
+reverseString('hello')

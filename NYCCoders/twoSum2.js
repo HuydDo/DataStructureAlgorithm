@@ -1,6 +1,7 @@
 function twoSum(A,N){
   let l = 0;
   let r = A.length-1;
+  
   let arr = []
    
   
