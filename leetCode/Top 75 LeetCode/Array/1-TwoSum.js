@@ -41,4 +41,4 @@ return "no matched";
 }
 
 console.log(twoSum([1, 2, 3, 4, 5], 7));
-console.log(twoSum([2, 4, 6, 8, 10], 18));
+// console.log(twoSum([2, 4, 6, 8, 10], 18));

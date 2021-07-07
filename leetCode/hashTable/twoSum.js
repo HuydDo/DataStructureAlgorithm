@@ -14,20 +14,7 @@
 // Because nums[0] + nums[1] = 2 + 7 = 9,
 // return [0, 1].
 
-// DOUG NOTES:
 
-// - remainder seems to be the way to solve this
-// - Needs hashtable
-//   - how do I save the index when I need both the element and its remainder?
-//   - Do the math outside of the loop!
-
-// - loop over array
-//   - create hashmap
-//     - key = element
-//     - value = index
-// - loop over hashmap
-//   - test to see if remainder is a key
-//   - if true return value of current iteration and value of matchMedia
 
 function twoSum(arr, target){
   for (var i = 0; i < arr.length; i++){
@@ -40,5 +27,8 @@ function twoSum(arr, target){
 return "no matched";
 }
 
-console.log(twoSum([1, 2, 3, 4, 5], 7));
+  
+
+
+
 console.log(twoSum([2, 4, 6, 8, 10], 18));

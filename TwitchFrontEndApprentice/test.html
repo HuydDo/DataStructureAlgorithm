@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <style>
+   div *{
+      display:block;
+      color:grey;
+      border:5px solid black;
+      padding:5px;
+      margin:15px;
+    }
+  </style> -->
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  
+  $(document).ready(function(){
+    $("#div2").find("*").css({
+      "color":"red",
+      "border": "5px solid red"
+    });
+
+    $("div").find("span").css({
+      "color":"blue",
+      "border": "5px solid lightgreen"
+    });
+  });
+
+ 
+</script>
+</head>
+
+<body> 
+
+
+<div id="div2">
+    This is Level 2
+    <p id="p1">This is Level 3</p>
+    <p id="p2">This is Level 3!
+      <span id="span1">This is Level 4</span>
+      <span id="span2">This is Level 4</span>
+    </p>
+  </div> 
+</div>
+
+  <!-- <p class="test2">HTML,Javascript, CSS,Actionscript, CoffeScritp,VBScript,Silverlight and some of the front end languages</p>
+  -->
+
+</body>
+</html>
