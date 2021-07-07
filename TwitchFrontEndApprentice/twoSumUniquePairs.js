@@ -4,7 +4,7 @@ function onlyUnique(value, index, self) {
 function twoSum(numbers, target){
   
   let arr = numbers.sort(function(a, b){return a-b});
-  console.log(arr)
+  // console.log(arr)
   let arr2 = []
   let count = 0
   for (var i = 0; i < arr.length; i++){
