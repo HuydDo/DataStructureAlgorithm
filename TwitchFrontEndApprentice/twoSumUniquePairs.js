@@ -3,7 +3,8 @@ function onlyUnique(value, index, self) {
 }
 function twoSum(numbers, target){
   
-  let arr = numbers.sort(function(a, b){return a-b});
+  // let arr = numbers.sort(function(a, b){return a-b});
+  let arr = numbers.sort((a,b) => a-b);
   // console.log(arr)
   let arr2 = []
   let count = 0
@@ -16,9 +17,9 @@ function twoSum(numbers, target){
       }
     }
   }
-  let stringArray = arr2.map(JSON.stringify);
-  let uniqueStringArray = new Set(stringArray);
-  let uniqueArray = Array.from(uniqueStringArray, JSON.parse);
+  let stringArray = arr2.map(JSON.stringify); //turn array into string
+  let uniqueStringArray = new Set(stringArray); // filter unique string
+  let uniqueArray = Array.from(uniqueStringArray, JSON.parse); //turn string array to array of array
   
   return uniqueArray
 }
@@ -26,5 +27,5 @@ function twoSum(numbers, target){
 
 
 
-console.log(twoSum([9,2,10,1,5,3,3], 12));
-// console.log(twoSum([2, 4, 6, 8, 10], 18));
+console.log(twoSum([9,2,10,1,5,3,3], 12));  //[ [ 2, 10 ], [ 3, 9 ] ]
+console.log(twoSum([2, 4, 6, 8, 10], 18));  //[ [ 8, 10 ] ]
