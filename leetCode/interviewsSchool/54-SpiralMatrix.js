@@ -1,5 +1,7 @@
-class Solution {
-  public List<Integer> spiralOrder(int[][] matrix) {
-      
-  }
-}
+/**
+ * @param {number[][]} matrix
+ * @return {number[]}
+ */
+ var spiralOrder = function(matrix) {
+    
+};
