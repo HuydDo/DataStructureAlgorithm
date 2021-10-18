@@ -20,6 +20,7 @@ const removeDuplicates = function(nums) {
     return i+1
 };
 
-let nums = [1,1,2]
-// let nums = [0,0,1,1,1,2,2,3,3,4]
-console.log(removeDuplicates(nums))
+let nums1 = [1,1,2]
+let nums2= [0,0,1,1,1,2,2,3,3,4]
+console.log(removeDuplicates(nums1))//2
+console.log(removeDuplicates(nums2))//5
